@@ -1,0 +1,119 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#container{
+	width: 640px;
+	background: url(../images/bg.png) no-repeat;
+	overflow: hidden;
+	margin:0 auto;
+}
+#top{
+	width: 640px;
+	height: 578px;
+	background: url(../images/top.png) no-repeat;
+}
+ul li{
+	float: left;
+	list-style: none;
+	padding-left:40px;
+}
+#content{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 640px;
+	height: 950px;
+} 
+#my{
+	background: url(../images/my.png) no-repeat;
+	width: 235px;
+	height: 86px;
+	position: absolute;
+	top: 0px;
+	left: 53px;
+	display: none; 
+	overflow: hidden;
+}
+#star{
+	background: url(../images/star.png) no-repeat;
+	width: 248px;
+	height: 86px;
+	position: absolute;;
+	top: 0px;
+	left: 324px;
+	display: block; 
+	overflow: hidden;
+}
+#my-container{
+	background: url(../images/my_border.png) no-repeat;
+	width: 615px;
+	height: 856px;
+	position: absolute;
+	overflow: hidden;
+	top: 10px;
+	left: 12px;
+	display: block; 
+}
+#info{
+	position: absolute;
+	top: 130px;
+	left: 16px;
+	font-family: "Microsoft YaHei";
+	font-size: 20px;
+}
+#baby-name{
+	background: url(../images/baby_border.png) no-repeat;
+	width: 149px; 
+	height: 53px;
+	border-radius: 13px;
+}
+#phone{
+	background: url(../images/phone_border.png) no-repeat;
+	width: 210px;
+	height: 53px;
+	border-radius: 13px;
+}
+#photo-content{
+	background: url(../images/photo_border.png) no-repeat;
+	width: 472px;
+	height: 101px;
+	border-radius: 27px;
+}
+#image{
+/* 	background: url(../images/photo.png) no-repeat; */
+	width: 504px;
+	height: 356px;
+	position: absolute;
+	top: 380px;
+	left: 55px;
+} 
+#img1{
+	width: 504px;
+	height: 356px;
+	position: absolute;
+	top:0px;
+	left:0px;	
+}
+#image-button{
+	background: url(../images/photo_button.png) no-repeat;
+	width: 186px;
+	height: 186px;
+
+
+}
+#star-container{
+	background: url(../images/star_content.png) no-repeat;
+	width: 615px;
+	height: 743px;
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	display: none;
+}
+#button{
+	background: url(../images/button.png) no-repeat;
+	width: 226px;
+	height: 106px;
+	margin:30px auto;
+}

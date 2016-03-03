@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>秀出你的宝贝</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="top"></div>
+		<div id="content">
+			<ul id="title">
+				<li id="my"></li>
+				<li id="star"></li>
+			</ul>
+			<div id="my-container">
+				<form id="info">
+					<lable>宝贝昵称：</lable>
+					<input type="text" id="baby-name" name="baby-name">
+					<lable>联系电话：</lable>
+					<input type="text" id="phone" name="phone"><br/><br/>
+					<lable>照片描述：</lable>
+					<input type="text" id="photo-content" name="photo-content">
+				</form>
+				<div id="image">
+					<form id="myform" action="" method="post">
+					<input type="file" id="image-button" onchange="show()">
+					<img src="images/photo.png" alt="" id="img"/> 
+					</form>
+				</div>
+				
+			</div>
+			<div id="star-container"></div>
+		</div>
+		<div id="button"></div>
+	</div>
+	<script type="text/javascript" src="js/title_change.js"></script>
+	<script type="text/javascript">
+
+
+	function getPath(obj,fileQuery,transImg) {
+		 
+		   var imgSrc = '', imgArr = [], strSrc = '' ;
+		    var file =fileQuery.files[0];
+		    var reader = new FileReader();
+		    reader.onload = function(e){		 
+		     imgSrc = fileQuery.value ;
+		     imgArr = imgSrc.split('.') ;
+		     strSrc = imgArr[imgArr.length - 1].toLowerCase() ;
+		      obj.setAttribute("src", e.target.result);
+
+		    }
+		    reader.readAsDataURL(file);		   
+		  }
+		 
+		  function show(){
+		   //以下即为完整客户端路径
+		   var file_img=document.getElementById("img"),
+		    iptfileupload = document.getElementById('image-button') ;
+		   getPath(file_img,iptfileupload,file_img) ;
+		  }
+	
+
+			
+
+
+		var btn = document.getElementById("button");
+		btn.addEventListener("click",function(){
+			submitData();
+		},false);
+	</script>
+
+	
+</body>
+</html>
